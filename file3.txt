@@ -1,0 +1,3 @@
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana","cherry")
+print(thislist)
