@@ -1,0 +1,199 @@
+$ cd task7/
+
+253604@Varun-PC MINGW64 /D/vcs/task7
+$ git init
+Initialized empty Git repository in D:/vcs/task7/.git/
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git add .
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "my new commit"
+[master (root-commit) bdb888b] my new commit
+ 5 files changed, 10 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+ create mode 100644 file3.txt
+ create mode 100644 file4.txt
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "edited one file recently"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file4.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git add .
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859 (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "edited one file recently"
+[master e275be2] edited one file recently
+ 1 file changed, 1 insertion(+)
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit e275be2f31bb0e5a074599d88ed5fdc5b41f36da (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:15:19 2022 -0500
+
+    edited one file recently
+
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "no changes in file"
+On branch master
+nothing to commit, working tree clean
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "no changes in file"
+On branch master
+nothing to commit, working tree clean
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "file modiefied"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file4.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit e275be2f31bb0e5a074599d88ed5fdc5b41f36da (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:15:19 2022 -0500
+
+    edited one file recently
+
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "file modiefied"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file4.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit e275be2f31bb0e5a074599d88ed5fdc5b41f36da (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:15:19 2022 -0500
+
+    edited one file recently
+
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git add .
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit e275be2f31bb0e5a074599d88ed5fdc5b41f36da (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:15:19 2022 -0500
+
+    edited one file recently
+
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git commit -m "file modiefied"
+[master 5a171c9] file modiefied
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit 5a171c993d4d894a245dac347e112c0cf5cfc9a0 (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:16:44 2022 -0500
+
+    file modiefied
+
+commit e275be2f31bb0e5a074599d88ed5fdc5b41f36da
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:15:19 2022 -0500
+
+    edited one file recently
+
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git reset --hard bdb888bf2a7326ca6882645e261b5902ab6e1859
+HEAD is now at bdb888b my new commit
+
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859 (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859 (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git reset
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (master)
+$ git log
+commit bdb888bf2a7326ca6882645e261b5902ab6e1859 (HEAD -> master)
+Author: Deepika J <deepikajawlikar@gmail.com>
+Date:   Tue Jan 18 22:13:56 2022 -0500
+
+    my new commit
+
+253604@Varun-PC MINGW64 /D/vcs/task7 (
